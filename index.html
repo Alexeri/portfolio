@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="index-body">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Ericson</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/897e05a826.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    
+</head>
+
+<body class="index-body">
+    <nav class="nav">
+        <ul class="menu">
+            <li class="logo"><a href="index.html"><img class="logo-img" src="img/logo.png"></a></li>
+            <li class="item"><a href="work.html">WORK</a></li>
+            <li class="item"><a href="contact.html">CONTACT</a></li>
+            <li class="toggle"><a id="test" href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <div class="centerbar">
+            <div class="centerbar-item block-1">
+                <div class="block-1-container">
+                    <span>ALEXANDER ERICSON</span>
+                </div>
+    
+            </div>
+            <div class="centerbar-item block-2">
+                <div class="block-2-container">
+                    GRAPHIC DESIGN <br>
+                    WEB DEVELOPMENT
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-item">A</div>
+                <div class="header-item">E</div>
+            </div>
+        </div>
+        <div class="images">
+            <div class="img img-one"></div>
+            <div class="img img-two"></div>
+            <div class="img img-three"></div>
+        </div>
+        <div class="bottombar">
+            <div class="bottombar-item year">2021</div>
+            <div class="bottombar-item"><a class="work"href="work.html">MY WORK</a></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+            TweenMax.staggerFrom(
+                ".navbar > div",
+                0.8,
+                {
+                    y: "60",
+                    ease: Power3.easeInOut,
+                    opacity: "0",
+                    delay: 1,
+                },
+                0.1
+            );
+            TweenMax.staggerFrom(
+                ".centerbar > div",
+                0.8,
+                {
+                    x: "-40",
+                    ease: Power3.easeInOut,
+                    opacity: "0",
+                    delay: 1.2,
+                },
+                0.1
+            );
+            TweenMax.staggerFrom(
+                ".bottombar > div",
+                0.8,
+                {
+                    y: "60",
+                    ease: Power3.easeInOut,
+                    opacity: "0",
+                    delay: 1,
+                },
+                0.1
+            );
+            TweenMax.staggerFrom(
+                ".images > div",
+                0.8,
+                {
+                    x: "-200",
+                    ease: Power2.easeInOut,
+                    opacity: "0",
+                    delay: 1.2,
+                },
+                0.16
+            );
+
+            TweenMax.staggerFrom(
+                ".header-container > div",
+                3,
+                {
+                    y: "500",
+                    ease: Elastic.easeOut.config(2, 0.4),
+                    delay: 2,
+                },
+                0.2
+            );
+    </script>
+</body>
+
+</html>
